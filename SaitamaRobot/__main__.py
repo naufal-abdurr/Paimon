@@ -57,7 +57,7 @@ Dibuat oleh wibu untuk wibu, Saya mengkhususkan diri dalam mengelola Anime.
 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
 
 _____________________
-Maintained by [XPIanimevideo](t.me/xpianimevideo)
+Maintained by XPIanimevideo, url="https://t.me/xpianimevideo"
 _____________________
 
 """
