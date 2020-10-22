@@ -202,18 +202,18 @@ def start(update: Update, context: CallbackContext):
                              text="🧸 Support Group",
                              url=f"https://t.me/AnimChatGroup"),
                          InlineKeyboardButton(
-                             text="Anime Channel Update",
+                             text="🎖 Anime Channel Update",
                              url="https://t.me/xpianimevideo")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Anime Channel On Going",
+                             text="🎯 Anime Channel On Going",
                              url="https://t.me/xpianimeongoing")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Support Channel Anime",
-                             url="https://t.me/xpianimevideo")
+                             text="Owner",
+                             url="https://t.me/Si_Nfal")
                      ]]))
     else:
         update.effective_message.reply_text(
