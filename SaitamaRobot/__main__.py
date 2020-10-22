@@ -199,21 +199,21 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             text="🧸 Support Group",
+                             url=f"https://t.me/AnimChatGroup"),
                          InlineKeyboardButton(
-                             text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
+                             text="Anime Channel Update",
+                             url="https://t.me/xpianimevideo")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧾 Getting started guide",
-                             url="https://t.me/OnePunchUpdates/29")
+                             text="Anime Channel On Going",
+                             url="https://t.me/xpianimeongoing")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
+                             text="Support Channel Anime",
+                             url="https://t.me/xpianimevideo")
                      ]]))
     else:
         update.effective_message.reply_text(
