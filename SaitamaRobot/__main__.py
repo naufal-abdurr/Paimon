@@ -51,13 +51,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hai {}, nama saya adalah {}! 
+Hai {}, saya adalah {}! 
 Saya adalah manajemen grup bertema Anime.
 Dibuat oleh wibu untuk wibu, Saya mengkhususkan diri dalam mengelola Anime.
 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
 
 _____________________
-Maintained by XPIanimevideo, url="https://t.me/xpianimevideo"
+Maintained by Owner @xpianimevideo
 _____________________
 
 """
