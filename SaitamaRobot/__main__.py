@@ -57,7 +57,7 @@ Dibuat oleh wibu untuk wibu, Saya mengkhususkan diri dalam mengelola Anime.
 Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
 
 _____________________
-Maintained by Owner @xpianimevideo
+modification by Owner @xpianimevideo
 _____________________
 
 """
@@ -199,21 +199,21 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🧸 Support Group",
-                             url=f"https://t.me/AnimChatGroup"),
-                         InlineKeyboardButton(
-                             text="🎖 Anime Channel Update",
-                             url="https://t.me/xpianimevideo")
-                     ],
-                     [
+                             text="🎖 Anime Channel Complete",
+                             url=f"https://t.me/xpianimevideo"),
                          InlineKeyboardButton(
                              text="🎯 Anime Channel On Going",
                              url="https://t.me/xpianimeongoing")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Owner",
-                             url="https://t.me/Si_Nfal")
+                             text="🧸 Support Group",
+                             url="https://t.me/AnimChatGroup")
+                     ],
+                     [
+                         InlineKeyboardButton(
+                             text="Source Code",
+                             url="https://github.com/naufal-abdurr/SaitamaRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
