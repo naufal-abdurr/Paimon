@@ -199,10 +199,10 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🎖 Anime Channel Complete",
+                             text="🎖 Anime Complete",
                              url=f"https://t.me/xpianimevideo"),
                          InlineKeyboardButton(
-                             text="🎯 Anime Channel On Going",
+                             text="🎯 Anime On Going",
                              url="https://t.me/xpianimeongoing")
                      ],
                      [
