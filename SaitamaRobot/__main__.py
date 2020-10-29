@@ -198,11 +198,8 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🎖abang kuota murah omg",
-                             url=f"https://t.me/kangmasbo"),
-                         
-                         InlineKeyboardButton(
-                             text="Source Code",
-                             url="https://github.com/naufal-abdurr/SaitamaRobot")
+                             url=f"https://t.me/kangmasbo"),              
+                        
                      ]]))
     else:
         update.effective_message.reply_text(
