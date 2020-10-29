@@ -52,12 +52,10 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hai {}, saya adalah {}! 
-Saya adalah manajemen grup bertema Anime.
-Dibuat oleh wibu untuk wibu, Saya mengkhususkan diri dalam mengelola Anime.
-Kamu dapat menemukan daftar perintah yang tersedia dengan /help.
+Saya adalah manajemen grup kuota murah omg mingguan /help.
 
 _____________________
-modification by Owner @xpianimevideo
+Owner @kangmasbo
 _____________________
 
 """
@@ -81,7 +79,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/efe637819d545f95967c9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/3c5a74ae4e38c23b57f81.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -193,24 +191,15 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Megumin to your group",
+                            text="☑️ Add kang bo to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🎖 Anime Complete",
-                             url=f"https://t.me/xpianimevideo"),
-                         InlineKeyboardButton(
-                             text="🎯 Anime On Going",
-                             url="https://t.me/xpianimeongoing")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="🧸 Support Group",
-                             url="https://t.me/AnimChatGroup")
-                     ],
-                     [
+                             text="🎖abang kuota murah omg",
+                             url=f"https://t.me/kangmasbo"),
+                         
                          InlineKeyboardButton(
                              text="Source Code",
                              url="https://github.com/naufal-abdurr/SaitamaRobot")
