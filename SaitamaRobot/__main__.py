@@ -51,11 +51,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hai {}, saya adalah {}! 
-Saya adalah manajemen grup kuota murah omg mingguan /help.
+Hai {}, I'am is {}! 
+I am a bot who is ready to help manage your group. Invite me into your group !!
+To see some commands type /help.
 
 _____________________
-Owner @kangmasbo
+Eheeeee >///<
 _____________________
 
 """
@@ -79,7 +80,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/3c5a74ae4e38c23b57f81.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/9f14aea4ca62cf593b717.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
