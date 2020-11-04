@@ -19,7 +19,7 @@ sites_list = {
 
 def get_readable_time(seconds: int) -> str:
     count = 0
-    ehe_time = ""
+    ping_time = ""
     time_list = []
     time_suffix_list = ["s", "m", "h", "days"]
 
@@ -31,30 +31,30 @@ def get_readable_time(seconds: int) -> str:
             remainder, result = divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
-        ehe_list.append(int(result))
+        ping_list.append(int(result))
         seconds = int(remainder)
 
     for x in range(len(time_list)):
         time_list[x] = str(time_list[x]) + time_suffix_list[x]
     if len(time_list) == 4:
-        ehe_time += time_list.pop() + ", "
+        ping_time += time_list.pop() + ", "
 
     time_list.reverse()
-    ehe_time += ":".join(time_list)
+    ping_time += ":".join(time_list)
 
-    return ehe_time
+    return ping_time
 
 
-def ehe_func(to_ehe: List[str]) -> List[str]:
-    ehe_result = []
+def ehe_func(to_ping: List[str]) -> List[str]:
+    ping_result = []
 
-    for each_ehe in to_ehe:
+    for each_ping in to_ping:
 
         start_time = time.time()
-        site_to_ehe = sites_list[each_ehe]
-        r = requests.get(site_to_ehe)
+        site_to_ping = sites_list[each_ping]
+        r = requests.get(site_to_ping)
         end_time = time.time()
-        ehe_time = str(round((end_time - start_time), 2)) + "s"
+        ping_time = str(round((end_time - start_time), 2)) + "s"
 
         pinged_site = f"<b>{each_ping}</b>"
 
@@ -62,8 +62,8 @@ def ehe_func(to_ehe: List[str]) -> List[str]:
             pinged_site = f'<a href="{sites_list[each_ping]}">{each_ping}</a>'
             ping_time = f"<code>{ping_time} (Status: {r.status_code})</code>"
 
-        ehe_text = f"{pinged_site}: <code>{ping_time}</code>"
-        ehe_result.append(ehe_text)
+        ping_text = f"{pinged_site}: <code>{ping_time}</code>"
+        ping_result.append(ehe_text)
 
     return ping_result
 
@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "EHEE!!\n"
+        "EHEE...!!\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
@@ -102,11 +102,11 @@ def pingall(update: Update, context: CallbackContext):
         reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
 
-PING_HANDLER = DisableAbleCommandHandler("ehe", ehe)
+PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall)
 
-dispatcher.add_handler(EHE_HANDLER)
+dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(PINGALL_HANDLER)
 
-__command_list__ = ["ehe", "pingall"]
-__handlers__ = [EHE_HANDLER, PINGALL_HANDLER]
+__command_list__ = ["ping", "pingall"]
+__handlers__ = [PING_HANDLER, PINGALL_HANDLER]
