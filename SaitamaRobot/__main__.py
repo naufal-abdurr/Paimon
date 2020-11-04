@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🚑 Support Group",
-                             url=f"https://t.me/{AnimChatGroup}"),
+                             url=f"https://t.me/AnimChatGroup"),
                          InlineKeyboardButton(
                              text="❔ Help",
                              callback_data="help_back")
