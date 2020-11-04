@@ -55,7 +55,11 @@ Hai {}, I'am is {}!
 I am a bot who is ready to help manage your group. Invite me into your group !!
 To see some commands type /help.
 
-`Maintained by` @Xpianimevideo
+
+
+____________________________
+Maintained by @Xpianimevideo
+____________________________
 
 """
 
@@ -199,8 +203,8 @@ def start(update: Update, context: CallbackContext):
                              text="🚑 Support Group",
                              url=f"https://t.me/AnimChatGroup"),
                          InlineKeyboardButton(
-                             text="❔ Help",
-                             callback_data="help_back")
+                             text="👥 Watch Anime",
+                             url="https://t.me/Xpianimevideo")
                         
                      ]]))
     else:
