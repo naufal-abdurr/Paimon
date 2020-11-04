@@ -19,7 +19,7 @@ sites_list = {
 
 def get_readable_time(seconds: int) -> str:
     count = 0
-    ping_time = ""
+    ehe_time = ""
     time_list = []
     time_suffix_list = ["s", "m", "h", "days"]
 
@@ -31,30 +31,30 @@ def get_readable_time(seconds: int) -> str:
             remainder, result = divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
-        time_list.append(int(result))
+        ehe_list.append(int(result))
         seconds = int(remainder)
 
     for x in range(len(time_list)):
         time_list[x] = str(time_list[x]) + time_suffix_list[x]
     if len(time_list) == 4:
-        ping_time += time_list.pop() + ", "
+        ehe_time += time_list.pop() + ", "
 
     time_list.reverse()
-    ping_time += ":".join(time_list)
+    ehe_time += ":".join(time_list)
 
-    return ping_time
+    return ehe_time
 
 
-def ping_func(to_ping: List[str]) -> List[str]:
-    ping_result = []
+def ehe_func(to_ehe: List[str]) -> List[str]:
+    ehe_result = []
 
-    for each_ping in to_ping:
+    for each_ehe in to_ehe:
 
         start_time = time.time()
-        site_to_ping = sites_list[each_ping]
-        r = requests.get(site_to_ping)
+        site_to_ehe = sites_list[each_ehe]
+        r = requests.get(site_to_ehe)
         end_time = time.time()
-        ping_time = str(round((end_time - start_time), 2)) + "s"
+        ehe_time = str(round((end_time - start_time), 2)) + "s"
 
         pinged_site = f"<b>{each_ping}</b>"
 
@@ -62,8 +62,8 @@ def ping_func(to_ping: List[str]) -> List[str]:
             pinged_site = f'<a href="{sites_list[each_ping]}">{each_ping}</a>'
             ping_time = f"<code>{ping_time} (Status: {r.status_code})</code>"
 
-        ping_text = f"{pinged_site}: <code>{ping_time}</code>"
-        ping_result.append(ping_text)
+        ehe_text = f"{pinged_site}: <code>{ping_time}</code>"
+        ehe_result.append(ehe_text)
 
     return ping_result
 
