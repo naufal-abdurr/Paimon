@@ -102,13 +102,11 @@ def pingall(update: Update, context: CallbackContext):
         reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
 
-PING_HANDLER = DisableAbleCommandHandler("ping", ping)
+PING_HANDLER = DisableAbleCommandHandler("ehe", ehe)
 PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall)
-EHE_HANDLER = DisableAbleCommandHandler("ehe", ehe)
 
-dispatcher.add_handler(PING_HANDLER)
-dispatcher.add_handler(PINGALL_HANDLER)
 dispatcher.add_handler(EHE_HANDLER)
+dispatcher.add_handler(PINGALL_HANDLER)
 
-__command_list__ = ["ping", "pingall", "ehe"]
-__handlers__ = [PING_HANDLER, PINGALL_HANDLER, EHE_HANDLER]
+__command_list__ = ["ehe", "pingall"]
+__handlers__ = [EHE_HANDLER, PINGALL_HANDLER]
