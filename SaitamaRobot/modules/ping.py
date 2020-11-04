@@ -31,7 +31,7 @@ def get_readable_time(seconds: int) -> str:
             remainder, result = divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
-        ping_list.append(int(result))
+        time_list.append(int(result))
         seconds = int(remainder)
 
     for x in range(len(time_list)):
@@ -45,7 +45,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-def ehe_func(to_ping: List[str]) -> List[str]:
+def ping_func(to_ping: List[str]) -> List[str]:
     ping_result = []
 
     for each_ping in to_ping:
@@ -63,7 +63,7 @@ def ehe_func(to_ping: List[str]) -> List[str]:
             ping_time = f"<code>{ping_time} (Status: {r.status_code})</code>"
 
         ping_text = f"{pinged_site}: <code>{ping_time}</code>"
-        ping_result.append(ehe_text)
+        ping_result.append(ping_text)
 
     return ping_result
 
@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "EHEE...!!\n"
+        "EHEE....!!\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
