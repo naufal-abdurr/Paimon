@@ -55,12 +55,6 @@ Hai {}, I'am is {}!
 I am a bot who is ready to help manage your group. Invite me into your group !!
 To see some commands type /help.
 
-
-
-____________________________
-Maintained by @Xpianimevideo
-____________________________
-
 """
 
 HELP_STRINGS = """
