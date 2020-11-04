@@ -55,9 +55,7 @@ Hai {}, I'am is {}!
 I am a bot who is ready to help manage your group. Invite me into your group !!
 To see some commands type /help.
 
-_____________________
-Eheeeee >///<
-_____________________
+`Maintained by` @Xpianimevideo
 
 """
 
@@ -192,14 +190,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add kang bo to your group",
+                            text="☑️ Add Paimon to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🎖abang kuota murah omg",
-                             url=f"https://t.me/kangmasbo"),              
+                             text="🚑 Support Group",
+                             url=f"https://t.me/{AnimChatGroup}"),
+                         InlineKeyboardButton(
+                             text="❔ Help",
+                             callback_data="help_back")
                         
                      ]]))
     else:
