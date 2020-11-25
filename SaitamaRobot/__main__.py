@@ -51,23 +51,21 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hai {}, I'am is {}! 
-I am a bot who is ready to help manage your group. Invite me into your group !!
-To see some commands type /help.
-
+Hai {}, Saya adalah {}! 
+Saya bot yang siap membantu mengelola grup Anda. Undang saya ke grup Anda!
+ Untuk melihat beberapa jenis perintah / bantuan.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Bot helping admins manage their group! Read the following help for an idea of ​​some of the things I can help you with.
+Hey kamu! Nama saya adalah *{}*.
+Saya Bot yang membantu admin mengelola grup mereka! Bacalah commands di bawah untuk kamu yang belum paham!!
 
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+*Main* commands tersedia:
+ • /help: ketik /help untuk pesan pribadi
+ • /help <module name>: ketik ini untuk mendapatkan info tentang module
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+   • di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+   • dalam group: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
 
 
 {}
@@ -194,8 +192,8 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/AnimChatGroup"),
+                             text="🦁 Owner",
+                             url=f"https://t.me/Si_Nfal"),
                          InlineKeyboardButton(
                              text="👥 Watch Anime",
                              url="https://t.me/Xpianimevideo")
