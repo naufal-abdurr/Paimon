@@ -52,8 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hai {}, Saya adalah {}! 
-Saya bot yang siap membantu mengelola grup Anda. Undang saya ke grup Anda!
- Untuk melihat beberapa jenis perintah / bantuan.
+Saya bot yang siap membantu mengelola grup Anda. Ketik /help untuk melihat beberapa jenis aturan!!
 """
 
 HELP_STRINGS = """
