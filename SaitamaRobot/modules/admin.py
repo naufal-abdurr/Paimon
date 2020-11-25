@@ -359,15 +359,15 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- • `/adminlist`*:* list of admins in the chat
-
+ • `/adminlist`*:* daftar admin dalam obrolan
+ 
 *Admins only:*
- • `/pin`*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users.
- • `/unpin`*:* unpins the currently pinned message
- • `/invitelink`*:* gets invitelink
- • `/promote`*:* promotes the user replied to
- • `/demote`*:* demotes the user replied to
- • `/settitle`*:* sets a custom title for an admin that the bot promoted
+ • `/pin`*:* pin dengan reply kata yang mau dipin
+ • `/unpin`*:* melepas pesan yang saat ini disematkan
+ • `/invitelink`*:* mendapat tautan undangan
+ • `/promote`*:* mempromosikan anggota
+ • `/demote`*:* menurunkan jabatan anggota
+ • `/settitle`*:* menetapkan judul khusus untuk admin yang dipromosikan bot
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler(["adminlist", "admins"],
